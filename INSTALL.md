@@ -39,8 +39,8 @@ python setup.py build_ext install
 
 # install PyTorch Detection
 cd $INSTALL_DIR
-https://github.com/HRNet/HRNET-FCOS.git
-cd HRNET-FCOS
+https://github.com/HRNet/HRNet-FCOS.git
+cd HRNet-FCOS
 
 # the following will install the lib with
 # symbolic links, so that you can modify
