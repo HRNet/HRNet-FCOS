@@ -39,7 +39,7 @@ python setup.py build_ext install
 
 # install PyTorch Detection
 cd $INSTALL_DIR
-git clone https://github.com/tianzhi0549/FCOS.git
+https://github.com/HRNet/HRNET-FCOS.git
 cd FCOS
 
 # the following will install the lib with
@@ -56,7 +56,7 @@ unset INSTALL_DIR
 ```
 
 ### Option 2: Docker Image (Requires CUDA, Linux only)
-*The following steps are for original maskrcnn-benchmark. Please change the repository name if needed.* 
+*The following steps are for original maskrcnn-benchmark. Please change the repository name and modify the Dockfile if needed.* 
 
 Build image with defaults (`CUDA=10.0`, `CUDNN=7`, `FORCE_CUDA=1`):
 
