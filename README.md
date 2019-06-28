@@ -26,10 +26,10 @@ For your convenience, we provide the following trained models.
 
 FCOS Model | Training mem (GB) | Multi-scale training | SyncBN| Testing time / im | # params |GFLOPs| AP (minival) | Link
 --- |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
-ResNet_50_5l_2x           | 29.3 | No  |No | 71ms  |32.0M |190.0| 37.1 | [model](https://cloudstor.aarnet.edu.au/plus/s/dDeDPBLEAt19Xrl/download)
+ResNet_50_5l_2x           | 29.3 | No  |No | 71ms  |32.0M |190.0| 37.1 | [-]()
 HRNet_W18_5l_2x           | 54.4 | No  |No | 72ms  |17.5M |180.3| 37.7 | [model](https://1drv.ms/u/s!Av9x_1oQAAoqeRND03CfS4HBONM?e=wT0G0O)
 ||
-ResNet_50_6l_2x           | 58.2 | No  |No | 98ms  |32.7M |529.0| 37.1 | [model]()
+ResNet_50_6l_2x           | 58.2 | No  |No | 98ms  |32.7M |529.0| 37.1 | [-]()
 HRNet_W18_6l_2x           | 88.1 | No  |No | 106ms |18.1M |515.1| 37.8 | [model](https://1drv.ms/u/s!Av9x_1oQAAoqeumBsKzXzZjE8Qs?e=fT1edk)
 ||
 ResNet_101_5l_2x          | 44.1 | Yes |No | 74ms  |51.0M |261.2| 41.4 | [model](https://cloudstor.aarnet.edu.au/plus/s/vjL3L0AW7vnhRTo/download)
