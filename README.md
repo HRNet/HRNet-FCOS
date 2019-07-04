@@ -28,23 +28,28 @@ FCOS Model | Training mem (GB) | Multi-scale training | SyncBN| Testing time / i
 --- |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 ResNet_50_5l_2x           | 29.3 | No  |No | 71ms  |32.0M |190.0| 37.1 | [-]()
 HRNet_W18_5l_2x           | 54.4 | No  |No | 72ms  |17.5M |180.3| 37.7 | [model](https://1drv.ms/u/s!Av9x_1oQAAoqeRND03CfS4HBONM?e=wT0G0O)
+HRNet_W18_5l_2x           | 55.0 | Yes |Yes| 72ms  |17.5M |180.3| 39.4 | [model](https://1drv.ms/u/s!Av9x_1oQAAoqgQlVjkAUDdV9Ej0A?e=9bh7VW)
 ||
 ResNet_50_6l_2x           | 58.2 | No  |No | 98ms  |32.7M |529.0| 37.1 | [-]()
 HRNet_W18_6l_2x           | 88.1 | No  |No | 106ms |18.1M |515.1| 37.8 | [model](https://1drv.ms/u/s!Av9x_1oQAAoqeumBsKzXzZjE8Qs?e=fT1edk)
+HRNet_W18_6l_2x           | 88.1 | Yes |Yes| 72ms  |17.5M |180.3|      | [model]()
 ||
 ResNet_101_5l_2x          | 44.1 | Yes |No | 74ms  |51.0M |261.2| 41.4 | [model](https://cloudstor.aarnet.edu.au/plus/s/vjL3L0AW7vnhRTo/download)
 HRNet_W32_5l_2x           | 78.9 | Yes |No | 87ms  |37.3M |273.3| 41.9 | [model](https://1drv.ms/u/s!Av9x_1oQAAoqfPuN69wCHx26k0o?e=L7c5FX)
+HRNet_W32_5l_2x           | 80.1 | Yes |Yes| 87ms  |37.3M |273.3| 42.5 | [model](https://1drv.ms/u/s!Av9x_1oQAAoqgQHJWCW0-u0zOgzi?e=yrtKUt)
 ||
 ResNet_101_6l_2x          | 71.0 | Yes |No | 121ms |51.6M |601.0| 41.5 | [model](https://1drv.ms/u/s!Av9x_1oQAAoqe7UH3Bh-kB8JuKA?e=EF9K0B)
 HRNet_W32_6l_2x           | 108.6| Yes |No | 125ms |37.9M |608.0| 42.1 | [model](https://1drv.ms/u/s!Av9x_1oQAAoqfZn3Xt2CrKUI2rk?e=ZdJSPG)
+HRNet_W32_6l_2x           | 109.9| Yes |Yes| 125ms |37.9M |608.0| 42.9 | [model](https://1drv.ms/u/s!Av9x_1oQAAoqf6I0plglrSXPuys?e=lzdDwu)
 ||
 HRNet_W40_6l_3x           | 128.0| Yes |No | 142ms |54.1M |682.9| 42.6 | [model](https://1drv.ms/u/s!Av9x_1oQAAoqfu-2x6aOIsGxSsg?e=OBbs5Z)
 
 [1] *1x and 2x mean the model is trained for 90K and 180K iterations, respectively.*\
 [2] *5l and 6l denote that we use feature pyramid with 5 levels and 6 levels, respectively.*\
-[3] *We report total training memory footprint on all GPUs instead of the memory footprint per GPU as in maskrcnn-benchmark.*\
-[4] *The inference speed of HRNet can get improved if the branches in the HRNet model can run in parallel.*\
-[5] *All results are obtained with a single model and without any test time data augmentation.*
+[3] *We provide model trained with Synchronous Batch Normalization (SyncBN).*\
+[4] *We report total training memory footprint on all GPUs instead of the memory footprint per GPU as in maskrcnn-benchmark.*\
+[5] *The inference speed of HRNet can get improved if the branches in the HRNet model can run in parallel.*\
+[6] *All results are obtained with a single model and without any test time data augmentation.*
 
 ### Training
 
