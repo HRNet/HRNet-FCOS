@@ -67,7 +67,7 @@ The following command line will trains a fcos_hrnet_w32_5l_2x model on 8 GPUs wi
 Note that:
 1) If you want to use fewer GPUs, please change `--nproc_per_node` to the number of GPUs. No other settings need to be changed. The total batch size does not depends on `nproc_per_node`. If you want to change the total batch size, please change `SOLVER.IMS_PER_BATCH` in [configs/fcos/fcos_hrnet_w32_5l_2x.yaml](configs/fcos/fcos_hrnet_w32_5l_2x.yaml).
 2) If you want to use Synchronous Batch-Normalization (SyncBN), please change `MODEL.SYNCBN` to `True`. Note that this will lead to ~2x slower training speed when training on mulitple machines. You also need to fix the image padding size when using SyncBN, see [here](maskrcnn_benchmark/structures/image_list.py#L62).
-3) The imagenet pre-trained model can be found [here](https://github.com/HRNet/HRNet-Object-Detection#faster-r-cnn).
+3) The imagenet pre-trained model can be found [here](https://github.com/HRNet/HRNet-Image-Classification#imagenet-pretrained-models).
 4) The models will be saved into `OUTPUT_DIR`.
 5) If you want to train FCOS on your own dataset, please follow this instruction [#54](https://github.com/tianzhi0549/FCOS/issues/54#issuecomment-497558687).
 ### Contributing to the project
