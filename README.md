@@ -43,7 +43,7 @@ HRNet_W32_6l_2x           | 109.9| Yes |Yes| 125ms |37.9M |608.0| 42.9 | [model]
 ||
 HRNet_W40_6l_3x           | 128.0| Yes |No | 142ms |54.1M |682.9| 42.6 | [model](https://1drv.ms/u/s!Av9x_1oQAAoqfu-2x6aOIsGxSsg?e=OBbs5Z)
 
-[1] *1x and 2x mean the model is trained for 90K and 180K iterations, respectively.*\
+[1] *1x, 2x and 3x mean the model is trained for 90K, 180K and 270k iterations, respectively.*\
 [2] *5l and 6l denote that we use feature pyramid with 5 levels and 6 levels, respectively.*\
 [3] *We provide model trained with Synchronous Batch Normalization (SyncBN).*\
 [4] *We report total training memory footprint on all GPUs instead of the memory footprint per GPU as in maskrcnn-benchmark.*\
